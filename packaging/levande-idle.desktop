@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Levande skärmsläckare vid inaktivitet
+Exec=python3 /usr/share/levande/idle.py
+OnlyShowIn=GNOME;Unity;
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
