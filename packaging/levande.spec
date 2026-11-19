@@ -1,5 +1,5 @@
 Name:           levande-screensaver
-Version:        0.1.0
+Version:        0.1.1
 Release:        1%{?dist}
 Summary:        Animated screensavers for GNOME
 License:        GPL-3.0-or-later
@@ -18,6 +18,8 @@ Nine animated scenes with GNOME idle monitoring and lock integration.
 install -d %{buildroot}%{_datadir}/levande/assets %{buildroot}%{_datadir}/applications %{buildroot}%{_sysconfdir}/xdg/autostart
 install -m 755 levande.py idle.py %{buildroot}%{_datadir}/levande/
 install -m 644 assets/*.png %{buildroot}%{_datadir}/levande/assets/
+install -d %{buildroot}%{_datadir}/levande/locale/sv/LC_MESSAGES
+install -m 644 locale/sv/LC_MESSAGES/*.mo %{buildroot}%{_datadir}/levande/locale/sv/LC_MESSAGES/
 install -m 644 packaging/levande.desktop %{buildroot}%{_datadir}/applications/
 install -m 644 packaging/levande-idle.desktop %{buildroot}%{_sysconfdir}/xdg/autostart/
 

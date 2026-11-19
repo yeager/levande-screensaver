@@ -3,6 +3,8 @@ import math
 import os
 import random
 import time
+import gettext
+import locale
 from pathlib import Path
 import cairo
 import gi
@@ -11,6 +13,9 @@ gi.require_version('Gtk', '4.0')
 gi.require_version('Gdk', '4.0')
 from gi.repository import Gtk, Gdk, GLib
 
+locale.setlocale(locale.LC_ALL, '')
+translations = gettext.translation('living-screensavers', localedir=Path(__file__).with_name('locale'), fallback=True)
+_ = translations.gettext
 
 class Screensaver(Gtk.Application):
     def __init__(self):
@@ -26,7 +31,7 @@ class Screensaver(Gtk.Application):
         self.fullscreened = False
 
     def do_activate(self):
-        self.window = Gtk.ApplicationWindow(application=self, title='Levande')
+        self.window = Gtk.ApplicationWindow(application=self, title=_('Living Screensavers'))
         self.window.set_default_size(1100, 700)
         self.area = Gtk.DrawingArea(hexpand=True, vexpand=True)
         self.area.set_draw_func(self.draw)

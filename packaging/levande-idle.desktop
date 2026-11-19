@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Levande skärmsläckare vid inaktivitet
+Name=Living Screensavers idle monitor
+Name[sv]=Levande skärmsläckare vid inaktivitet
 Exec=python3 /usr/share/levande/idle.py
 OnlyShowIn=GNOME;Unity;
 NoDisplay=true

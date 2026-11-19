@@ -1,7 +1,9 @@
 [Desktop Entry]
 Type=Application
-Name=Levande skärmsläckare
-Comment=Animerade motiv för GNOME
+Name=Living Screensavers
+Name[sv]=Levande skärmsläckare
+Comment=Animated scenes for GNOME
+Comment[sv]=Animerade motiv för GNOME
 Exec=env LEVANDE_FULLSCREEN=1 python3 /usr/share/levande/levande.py
 Icon=preferences-desktop-screensaver
 Categories=Graphics;

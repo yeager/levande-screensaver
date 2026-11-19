@@ -1,4 +1,4 @@
-# Levande
+# Living Screensavers
 
 Animerade skärmsläckare för GNOME med nio motiv. Välj motiv med 1–9 eller piltangenterna. F11 växlar helskärm och Esc avslutar.
 
